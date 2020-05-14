@@ -51,3 +51,49 @@ a#categ {
     color: white;
 }
 
+
+
+
+
+.mainWrapper{ 
+    min-height: 100vh;
+    background-color: grey;
+    display: flex;
+}
+.sideMenu{
+    flex: 20%;
+    background-color: lightblue;
+    position: relative;
+}
+.sideMenu ul{
+    padding: 0;
+    list-style: none;
+}
+.sideMenu ul li {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 5px 0;
+}
+
+.mainContent{
+    flex: 80%;
+}
+
+.menuExtended{
+    display: none;
+    position: absolute;
+    height: 80vh;
+    width: 300px;
+    background-color: lightcoral;
+    top: 0;
+    right: 0;
+    transform: translate(100%);
+}
+
+.sideMenu ul li:nth-child(1):hover .menuExtended.one{
+    display: block;
+}
+.sideMenu ul li:nth-child(2):hover .menuExtended.two{
+    display: block;
+}
+
